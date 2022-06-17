@@ -1,50 +1,36 @@
-import { createTheme } from '@mui/material/styles';
-import colors from './colors';
-
+import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: colors.primary
+      main: "#3C7A89",
     },
     secondary: {
-      main: colors.secondary
-    }
+      main: "#DBC2CF",
+    },
   },
-  
+
   typography: {
-    fontFamily: [
-      'Montserrat',
-      'sans-serif',
-    ].join(','),
+    fontFamily: `'Joan', serif`,
   },
   components: {
-    MuiCssBaseline: {
-      styleOverrides: `
-        @font-face {
-          font-family: 'Montserrat', sans-serif;
-        }
-      `,
-    },
-    
     MuiButton: {
       defaultProps: {
         disableRipple: true,
         sx: {
-          borderRadius: 8
-        }
+          borderRadius: 8,
+        },
       },
       styleOverrides: {
-        
-        contained: {
-          boxShadow: 'none'
+        root: {
+          boxShadow: "none",
         },
         outlined: {
-          '&hover': {
-            color: 'primary'
-          }
-        }
-      }
+          "&hover": {
+            color: "primary",
+          },
+        },
+      },
     },
     MuiTextField: {
       defaultProps: {
@@ -52,18 +38,14 @@ const theme = createTheme({
         sx: {
           marginTop: 0.5,
           marginBottom: 0.5,
-          
-        }
+        },
       },
     },
-    
+
     MuiPaper: {
-      styleOverrides: {
-        
-      }
-    }
-    
+      styleOverrides: {},
+    },
   },
-})
+});
 
 export default theme;

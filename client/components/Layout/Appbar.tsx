@@ -13,6 +13,7 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { styled } from "@mui/system";
 import appConfig from "@/client/config/appConfig";
 import { useSession, signIn, signOut } from "next-auth/react";
+import UploadIcon from "@mui/icons-material/Upload";
 interface Props {
   children: React.ReactElement;
 }
@@ -33,7 +34,13 @@ const Appbar = () => {
             <Grid container component="div" spacing={2} alignItems="center">
               <Grid item>
                 <Link href={`/dashboard`} passHref>
-                  <Button color="inherit">Protected Page</Button>
+                  <Button
+                    variant="contained"
+                    color="secondary"
+                    endIcon={<UploadIcon />}
+                  >
+                    Upload A Theme
+                  </Button>
                 </Link>
               </Grid>
               <Grid item>
@@ -52,7 +59,7 @@ const Appbar = () => {
                       />
                     </Grid>
                     <Grid item>
-                      <Button color="inherit" onClick={() => signOut()}>
+                      <Button color="secondary" onClick={() => signOut()}>
                         Sign Out
                       </Button>
                     </Grid>

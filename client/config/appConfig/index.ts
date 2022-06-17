@@ -1,15 +1,11 @@
 export const footerConfig = {
-    company: `MUNF INC.`, // shows up on footer
-    email: `shreyasjadhav444@gmail.com`
-}
-
+  company: `MUI Themes`, // shows up on footer
+  email: `shreyasjadhav444@gmail.com`,
+};
 
 const appConfig = {
-    title: `MUNF`, // for navbar, firebase auth
-    footer: footerConfig,
-}
-
-
-
+  title: `Custom MUI Themes`, // for navbar, firebase auth
+  footer: footerConfig,
+};
 
 export default appConfig;

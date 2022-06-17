@@ -15,32 +15,17 @@ const Index: NextPage = () => {
           leftContent={
             <>
               <Typography variant="h5" component="h1" fontWeight="bold">
-                Next.JS, MongoDB, MUI, Authentication
+                Find Themes for Material UI Projects
               </Typography>
 
               <Typography variant="h6" component="h2">
-                Complete Starter Code for your Next Scalable Project.
-              </Typography>
-              <Typography
-                component="a"
-                href="https://next-architecture-docs.vercel.app/"
-              >
-                Read More About Architecture
+                Simply Copy and Paste the ready-made theme objects!
               </Typography>
             </>
           }
           rightContent={null}
         />
         <Divider />
-        <Typography variant="h4">Demos</Typography>
-        <Stack component="ul" spacing={2}>
-          <li>
-            <Link href={`/dashboard`}>Protected Page</Link>
-          </li>
-          <li>
-            <Link href={`/create`}>Form Demo</Link>
-          </li>
-        </Stack>
       </Stack>
     </Container>
   );
